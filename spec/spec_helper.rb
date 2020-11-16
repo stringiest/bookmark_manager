@@ -13,6 +13,24 @@
 # it.
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
+require 'capybara/rspec'
+require 'simplecov'
+require 'simplecov-console'
+# require 'features/web_helpers'
+
+SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([
+  SimpleCov::Formatter::Console,
+  # Want a nice code coverage website? Uncomment this next line!
+  # SimpleCov::Formatter::HTMLFormatter
+])
+SimpleCov.start
+
+# For accurate test coverage measurements, require your code AFTER 'SimpleCov.start'
+
+require File.join(File.dirname(__FILE__), '..', 'app.rb')
+
+Capybara.app = BookmarkManager
+
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
@@ -97,4 +115,10 @@ RSpec.configure do |config|
   # as the one that triggered the failure.
   Kernel.srand config.seed
 =end
+  config.after(:suite) do
+    puts
+    puts "\e[33mHave you considered running rubocop? It will help you improve your code!\e[0m"
+    puts "\e[33mTry it now! Just run: rubocop\e[0m"
+  end
+
 end
