@@ -4,6 +4,8 @@
       "/Users/stringiest/Projects/week_4/bookmark_manager/app.rb": {
         "lines": [
           1,
+          1,
+          null,
           null,
           1,
           null,
@@ -20,6 +22,21 @@
           null,
           null,
           1,
+          null
+        ]
+      },
+      "/Users/stringiest/Projects/week_4/bookmark_manager/lib/bookmark.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          2,
+          2,
+          8,
+          null,
+          null,
           null
         ]
       },
@@ -58,23 +75,8 @@
           null,
           null
         ]
-      },
-      "/Users/stringiest/Projects/week_4/bookmark_manager/lib/bookmark.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          null,
-          2,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
       }
     },
-    "timestamp": 1605624813
+    "timestamp": 1605628266
   }
 }
