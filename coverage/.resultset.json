@@ -12,6 +12,11 @@
           null,
           null,
           null,
+          1,
+          1,
+          1,
+          null,
+          null,
           null,
           null,
           1,
@@ -25,10 +30,51 @@
           1,
           1,
           null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/stringiest/Projects/week_4/bookmark_manager/spec/features/bookmarks_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/stringiest/Projects/week_4/bookmark_manager/lib/bookmark.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          2,
+          null,
+          null,
+          null,
+          null,
+          null,
           null
         ]
       }
     },
-    "timestamp": 1605542296
+    "timestamp": 1605624813
   }
 }
