@@ -5,13 +5,13 @@ require './lib/bookmark'
 class BookmarkManager < Sinatra::Application
 
   get '/' do
-      "Bookmark Manager"
-      # erb :bookmarks
-    end
+    "Bookmark Manager"
+    # erb :bookmarks
+  end
 
   get '/bookmarks' do
     @bookmarks = Bookmark.all
-  erb :'bookmarks/index'
+    erb :'bookmarks/index'
   end
 
 
