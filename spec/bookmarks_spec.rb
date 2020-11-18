@@ -3,7 +3,6 @@ require 'bookmark'
 describe Bookmark do
   describe '.all' do
     it 'returns all bookmarks' do
-
       # Add the test data
       Bookmark.create(url: 'http://www.makersacademy.com')
       Bookmark.create(url: 'http://www.destroyallsoftware.com')

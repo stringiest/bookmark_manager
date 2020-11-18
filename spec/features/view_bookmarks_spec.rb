@@ -9,7 +9,6 @@ end
 
 feature 'Bookmarks' do
   scenario 'can view bookmarks' do
-
     # Add the test data
     Bookmark.create(url: 'http://www.makersacademy.com')
     Bookmark.create(url: 'http://www.destroyallsoftware.com')
