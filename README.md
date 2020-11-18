@@ -47,20 +47,20 @@ The website will have the following **specification**:
 ## User stories
 
 ```
-As a user
-So that I can find my favourite websites
-I want to be shown a list of bookmarks.
+As a time-pressed user
+So that I can quickly go to web sites I regularly visit
+I would like to see a list of bookmarks
 ```
 ![Domain model for user story 1](DM_for_US1.png)
 
 ```
 As a time-pressed user
-So that I can quickly go to web sites I regularly visit
-I would like to see a list of bookmarks
+So that I can save a website
+I would like to add the site's address and title to bookmark manager
 ```
 
 ```
 As a time-pressed user
-So that I can save a website
-I would like to add the site's address and title to bookmark manager
+So that I can revisit my favourite websites
+I would like to be able to save a bookmark
 ```
