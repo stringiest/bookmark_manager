@@ -1,5 +1,8 @@
+# frozen_string_literal: true
+
 require 'sinatra/base'
 require './lib/bookmark'
+require './database_connection_setup'
 
 class BookmarkManager < Sinatra::Application
   enable :sessions, :method_override
@@ -39,5 +42,5 @@ class BookmarkManager < Sinatra::Application
   end
 
   # start the server if ruby file executed directly
-  run! if app_file == $0
+  run! if app_file == $PROGRAM_NAME
 end

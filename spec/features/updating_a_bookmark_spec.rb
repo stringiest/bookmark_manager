@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 feature 'Updating a bookmark' do
   scenario 'A user can update a bookmark' do
     bookmark = Bookmark.create(url: 'http://www.makersacademy.com', title: 'Makers Academy')
@@ -7,8 +9,8 @@ feature 'Updating a bookmark' do
     first('.bookmark').click_button 'Edit'
     expect(current_path).to eq "/bookmarks/#{bookmark.id}/edit"
 
-    fill_in('url', with: "http://www.snakersacademy.com")
-    fill_in('title', with: "Snakers Academy")
+    fill_in('url', with: 'http://www.snakersacademy.com')
+    fill_in('title', with: 'Snakers Academy')
     click_button('Submit')
 
     expect(current_path).to eq '/bookmarks'
