@@ -2,6 +2,8 @@ require 'sinatra/base'
 require './lib/bookmark'
 
 class BookmarkManager < Sinatra::Application
+  enable :sessions, :method_override
+
   get '/' do
     'Bookmark Manager'
     # erb :bookmarks
@@ -19,6 +21,11 @@ class BookmarkManager < Sinatra::Application
 
   get '/bookmarks/new' do
     erb :'bookmarks/new'
+  end
+
+  delete '/bookmarks/:id' do
+    Bookmark.delete(id: params[:id])
+    redirect '/bookmarks'
   end
 
   # start the server if ruby file executed directly

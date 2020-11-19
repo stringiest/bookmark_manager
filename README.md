@@ -71,3 +71,9 @@ As a time-pressed user
 So that I can revisit my favourite websites
 I would like to be able to save a bookmark
 ```
+
+```
+As a user
+So I can remove my bookmark from Bookmark Manager
+I want to delete a bookmark
+```
