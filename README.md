@@ -10,7 +10,7 @@ Build a bookmark manager.  A bookmark manager is a website to maintain a collect
 ### Cloning the repo & installing the necessary gems
 ```sh
 $ git clone git@github.com:stringiest/bookmark_manager.git
-$ cd rps-challenge
+$ cd bookmark_manager
 $ bundle
 ```
 ### Creating the database
@@ -29,7 +29,7 @@ $ bundle
 
 ### To run the Bookmark Manager app:
 ```
-rackup -p 3000  rackup -p 3000
+rackup -p 3000
 ```
 
 ## Main focuses for this week
